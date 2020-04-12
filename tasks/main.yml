@@ -1,0 +1,15 @@
+---
+# tasks file for weechat-irc-proxy
+- debug:
+    msg: 
+      - "{{ ansible_distribution }}" 
+      - "{{ ansible_distribution_version }}" 
+
+- import_tasks: fedora.yml
+  when: ansible_distribution | lower == 'fedora'
+ 
+- import_tasks: redhat.yml
+  when: ansible_distribution | lower == 'redhat'
+ 
+- import_tasks: centos.yml
+  when: ansible_distribution | lower == 'centos'

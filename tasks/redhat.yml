@@ -1,0 +1,7 @@
+---
+# tasks file for weechat-irc-proxy
+# for Red Hat Enterprise Linux Distribution
+#
+- debug:
+    msg: 
+      - "tasks file for weechat-irc-proxy"

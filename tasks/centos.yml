@@ -1,0 +1,6 @@
+---
+# tasks file for weechat-irc-proxy
+# for CentOS Linux Distribution
+- debug:
+    msg: 
+      - "tasks file for weechat-irc-proxy"
